@@ -30,3 +30,4 @@ npm run start -- all 1     # run the first day of all years
 ### [2021](https://adventofcode.com/2021)
 
 - [Day 01: Sonar Sweep](https://adventofcode.com/2021/day/1) ⭐⭐
+- [Day 02: Dive!](https://adventofcode.com/2021/day/2) ⭐⭐
