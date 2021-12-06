@@ -1,9 +1,10 @@
+import { getInput } from "./get-input";
 import { runDay } from "./run-day";
 
 const argv = process.argv.slice(2);
 const [year, day] = argv;
 
-export function run() {
+function run() {
   if ((year === "all" && day === "all") || (year === "all" && !day)) {
     for (let year = 2015; year <= 2021; year++) {
       console.log(`\n-- ${year} --`);
@@ -31,8 +32,10 @@ export function run() {
     try {
       console.log(`-- ${year} --`);
       runDay(+year, +day);
-    } catch (_) {
-      console.error(`Year ${year} day ${day} not implemented.`);
+    } catch (error) {
+      console.error(error);
     }
   }
 }
+
+export { run, runDay, getInput };

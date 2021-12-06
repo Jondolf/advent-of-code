@@ -9,6 +9,6 @@ export function runDay(year: number, day: number) {
     console.log(`\nDay ${day} part 1:`, part1(input));
     console.log(`Day ${day} part 2:`, part2(input));
   } catch (error) {
-    throw new Error(`Couldn't run year ${year} day ${day}.`);
+    throw new Error(`Couldn't run year ${year} day ${day}. ${error}`);
   }
 }
