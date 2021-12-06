@@ -34,3 +34,4 @@ npm run start -- all 1     # run the first day of all years
 - [Day 03: Binary Diagnostic](https://adventofcode.com/2021/day/3) ⭐⭐
 - [Day 04: Giant Squid](https://adventofcode.com/2021/day/4) ⭐⭐
 - [Day 05: Hydrothermal Venture](https://adventofcode.com/2021/day/5) ⭐⭐
+- [Day 06: Lanternfish](https://adventofcode.com/2021/day/6) ⭐⭐
