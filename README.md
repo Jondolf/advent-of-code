@@ -25,7 +25,7 @@ npm start all 1     # run the first day of all years
 
 **SPOILERS**: Below are my solutions to the puzzles that I have completed. If you haven't done them yet, the solutions may be spoiled for you. Look at the code at your own risk.
 
-- ⚓ [2021](years/2021) ([web]((https://adventofcode.com/2021))) 12 stars
+- ⚓ [2021](years/2021) ([web](https://adventofcode.com/2021)) 12 stars
   - [Day 01: Sonar Sweep](years/2021/solutions/day-01) ([web](https://adventofcode.com/2021/day/1)) ★★
   - [Day 02: Dive!](years/2021/solutions/day-02) ([web](https://adventofcode.com/2021/day/2)) ★★
   - [Day 03: Binary Diagnostic](years/2021/solutions/day-03) ([web](https://adventofcode.com/2021/day/3)) ★★
