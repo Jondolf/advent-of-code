@@ -50,7 +50,7 @@ function getOverlapCount(lines: Coordinate[][]): number {
     }
   }
 
-  drawDiagram(points, xLargest, yLargest);
+  // drawDiagram(points, xLargest, yLargest);
 
   return [...points.values()].filter((count) => count >= 2).length;
 }
@@ -66,7 +66,9 @@ function drawDiagram(
     diagram += "\n";
 
     for (let x = 0; x <= xLargest; x++) {
-      const pointCount = map.get(`${x},${y}`) || ".";
+      const pointCount = map.has(`${x},${y}`)
+        ? `\u001b[33m#\u001b[0m`
+        : `\u001b[34m#\u001b[0m`;
 
       if (pointCount) {
         diagram += pointCount.toString();
