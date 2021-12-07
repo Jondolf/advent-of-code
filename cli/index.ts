@@ -1,39 +1,50 @@
+import { createDay } from "./create-day";
 import { getInput } from "./get-input";
 import { runDay } from "./run-day";
 
 const argv = process.argv.slice(2);
-const [year, day] = argv;
+const [command, year, day] = argv;
 
 function run() {
-  if ((year === "all" && day === "all") || (year === "all" && !day)) {
-    for (let year = 2015; year <= 2021; year++) {
-      console.log(`\n-- ${year} --`);
+  if (command === "start") {
+    if ((year === "all" && day === "all") || (year === "all" && !day)) {
+      for (let year = 2015; year <= 2021; year++) {
+        console.log(`\n-- ${year} --`);
+        for (let day = 1; day <= 25; day++) {
+          try {
+            runDay(+year, day);
+          } catch (_) {}
+        }
+      }
+    } else if (year && day === "all") {
+      console.log(`-- ${year} --`);
       for (let day = 1; day <= 25; day++) {
         try {
           runDay(+year, day);
         } catch (_) {}
       }
-    }
-  } else if (year && day === "all") {
-    console.log(`-- ${year} --`);
-    for (let day = 1; day <= 25; day++) {
+    } else if (year === "all" && day) {
+      for (let year = 2015; year <= 2021; year++) {
+        console.log(`\n-- ${year} --`);
+        try {
+          runDay(+year, +day);
+        } catch (_) {}
+      }
+    } else {
       try {
-        runDay(+year, day);
-      } catch (_) {}
-    }
-  } else if (year === "all" && day) {
-    for (let year = 2015; year <= 2021; year++) {
-      console.log(`\n-- ${year} --`);
-      try {
+        console.log(`-- ${year} --`);
         runDay(+year, +day);
-      } catch (_) {}
+      } catch (error) {
+        console.error(error);
+      }
     }
-  } else {
-    try {
-      console.log(`-- ${year} --`);
-      runDay(+year, +day);
-    } catch (error) {
-      console.error(error);
+  } else if (command === "create") {
+    if (!isNaN(+year) && !isNaN(+day)) {
+      try {
+        createDay(+year, +day);
+      } catch (error) {
+        console.error(error);
+      }
     }
   }
 }

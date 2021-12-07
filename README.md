@@ -15,10 +15,27 @@ npm start <year|all> <day|all>
 ### Examples:
 
 ```
-npm start 2021 1    # run day 1 of 2021
-npm start all       # run all implemented days of all years
-npm start 2021 all  # run all implemented days of 2021
-npm start all 1     # run the first day of all years
+npm run start 2021 1    # run day 1 of 2021
+npm run start all       # run all implemented days of all years
+npm run start 2021 all  # run all implemented days of 2021
+npm run start all 1     # run the first day of all years
+```
+
+## ⚙ Generating new days
+
+You can also generate new days from the command line. The folders and files will be created according to given arguments, if they don't already exist.
+
+To generate a new day's folder, solution file and input file:
+
+```
+npm run create <year> <day>
+```
+
+### Examples:
+
+```
+npm run create 2021 8  # create template for day 8 of 2021
+npm run create 3264 16  # create template for day 16 of 3264
 ```
 
 ## 🧩 Completed puzzles

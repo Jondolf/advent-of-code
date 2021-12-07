@@ -11,7 +11,8 @@
     "@types/node": "^14.14.10"
   },
   "scripts": {
-    "start": "ts-node ./index.ts"
+    "start": "ts-node ./index.ts start",
+    "create": "ts-node ./index.ts create"
   },
   "author": "",
   "license": "ISC"
