@@ -34,7 +34,7 @@ npm run create <year> <day>
 ### Examples:
 
 ```
-npm run create 2021 8  # create template for day 8 of 2021
+npm run create 2021 8   # create template for day 8 of 2021
 npm run create 3264 16  # create template for day 16 of 3264
 ```
 
