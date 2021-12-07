@@ -1,4 +1,4 @@
-import { sum } from "../../utils/sum";
+import { sum } from "../../utils";
 
 export function part1(input: string) {
   const timers = input.split(",").map((val) => +val);

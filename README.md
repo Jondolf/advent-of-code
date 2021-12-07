@@ -9,7 +9,7 @@ Advent of Code is an Advent calendar of small programming puzzles for a variety 
 To run solutions:
 
 ```
-npm run start -- <year|all> <day|all>
+npm start <year|all> <day|all>
 ```
 
 ### Examples:
@@ -32,3 +32,4 @@ npm start all 1     # run the first day of all years
   - [Day 04: Giant Squid](years/2021/solutions/day-04) ([web](https://adventofcode.com/2021/day/4)) ★★
   - [Day 05: Hydrothermal Venture](years/2021/solutions/day-05) ([web](https://adventofcode.com/2021/day/5)) ★★
   - [Day 06: Lanternfish](years/2021/solutions/day-06) ([web](https://adventofcode.com/2021/day/6)) ★★
+  - [Day 07: The Treachery of Whales](years/2021/solutions/day-07) ([web](https://adventofcode.com/2021/day/7)) ★★
