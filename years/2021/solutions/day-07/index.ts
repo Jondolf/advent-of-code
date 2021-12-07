@@ -2,7 +2,6 @@ import { average, median, sortAsc, sum } from "../../utils";
 
 export function part1(input: string) {
   const positions = sortAsc(formatInput(input));
-  console.log(median(positions));
   return sum(consumptions(positions, median(positions)));
 }
 
