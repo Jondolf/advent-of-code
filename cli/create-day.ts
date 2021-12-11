@@ -5,7 +5,9 @@ export function createDay(year: number, day: number) {
     const dir = `years/${year}/solutions/day-${day
       .toString()
       .padStart(2, "0")}`;
-    const daySolutionTemplate = `export function part1(input: string) {
+    const daySolutionTemplate = `// https://adventofcode.com/${year}/day/${day}
+
+export function part1(input: string) {
   return "Not implemented yet.";
 }
 

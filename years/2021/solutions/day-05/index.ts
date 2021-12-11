@@ -1,7 +1,6 @@
-interface Coordinate {
-  x: number;
-  y: number;
-}
+// https://adventofcode.com/2021/day/5
+
+import { Coordinate } from "../../utils";
 
 export function part1(input: string) {
   const lines: Coordinate[][] = formatInput(input).filter(

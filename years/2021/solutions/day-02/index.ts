@@ -1,3 +1,5 @@
+// https://adventofcode.com/2021/day/2
+
 interface Command {
   dir: Direction;
   val: number;

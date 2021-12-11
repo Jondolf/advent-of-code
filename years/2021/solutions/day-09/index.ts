@@ -1,3 +1,5 @@
+// https://adventofcode.com/2021/day/9
+
 import { Coordinate, multiply, sortDesc, sum } from "../../utils";
 
 export function part1(input: string) {

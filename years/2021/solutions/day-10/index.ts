@@ -1,3 +1,5 @@
+// https://adventofcode.com/2021/day/10
+
 import { median, sum } from "../../utils";
 
 type OpeningBracket = "(" | "[" | "{" | "<";

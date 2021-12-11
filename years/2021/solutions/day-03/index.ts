@@ -1,3 +1,5 @@
+// https://adventofcode.com/2021/day/3
+
 export function part1(input: string) {
   const columns = getColumns(formatInput(input)).map((num) => num.join(""));
   let [gammaRate, epsilonRate] = ["", ""];

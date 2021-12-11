@@ -1,3 +1,5 @@
+// https://adventofcode.com/2021/day/4
+
 type Board = number[][];
 
 export function part1(input: string) {

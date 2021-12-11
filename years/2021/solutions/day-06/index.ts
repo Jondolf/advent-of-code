@@ -1,3 +1,5 @@
+// https://adventofcode.com/2021/day/6
+
 import { sum } from "../../utils";
 
 export function part1(input: string) {

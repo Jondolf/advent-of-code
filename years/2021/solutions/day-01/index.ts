@@ -1,3 +1,5 @@
+// https://adventofcode.com/2021/day/1
+
 export function part1(input: string) {
   const numbers = formatInput(input);
   const numIncreases = countIncrements(numbers);
