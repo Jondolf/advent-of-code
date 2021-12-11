@@ -3,6 +3,28 @@ export interface Coordinate {
   y: number;
 }
 
+export function coordsInRange(
+  minX: number,
+  minY: number,
+  maxX: number,
+  maxY: number
+): Coordinate[] {
+  const coords: Coordinate[] = [];
+  for (let y = minY; y <= maxY; y++) {
+    for (let x = minX; x <= maxX; x++) {
+      coords.push({ x, y });
+    }
+  }
+  return coords;
+}
+
+export function countOccurrences(
+  arr: (string | number)[],
+  val: string | number
+): number {
+  return arr.filter((item) => item === val).length;
+}
+
 export function sum(arr: number[]): number {
   return arr.reduce((a, b) => a + b);
 }
