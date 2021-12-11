@@ -51,3 +51,4 @@ npm run create 3264 16  # create template for day 16 of 3264
   - [Day 06: Lanternfish](years/2021/solutions/day-06) ([web](https://adventofcode.com/2021/day/6)) ★★
   - [Day 07: The Treachery of Whales](years/2021/solutions/day-07) ([web](https://adventofcode.com/2021/day/7)) ★★
   - [Day 09: Smoke Basin](years/2021/solutions/day-09) ([web](https://adventofcode.com/2021/day/9)) ★★
+  - [Day 10: Syntax Scoring](years/2021/solutions/day-10) ([web](https://adventofcode.com/2021/day/10)) ★★

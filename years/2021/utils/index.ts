@@ -12,7 +12,7 @@ export function multiply(arr: number[]): number {
 }
 
 export function median(arr: any[]): any {
-  return arr[Math.round(arr.length / 2)];
+  return sortAsc(arr)[Math.floor(arr.length / 2)];
 }
 
 export function average(arr: number[]): number {
