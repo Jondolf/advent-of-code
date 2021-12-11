@@ -1,5 +1,14 @@
+export interface Coordinate {
+  x: number;
+  y: number;
+}
+
 export function sum(arr: number[]): number {
   return arr.reduce((a, b) => a + b);
+}
+
+export function multiply(arr: number[]): number {
+  return arr.reduce((a, b) => a * b);
 }
 
 export function median(arr: any[]): any {
