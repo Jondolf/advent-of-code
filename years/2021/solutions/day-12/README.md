@@ -1,6 +1,6 @@
 ## [Day 12: Passage Pathing](https://adventofcode.com/2021/day/12)
 
-With your submarine's subterranean subsystems subsisting suboptimally, the only way you're getting out of this cave anytime soon is by finding a path yourself. Not just _a_ path - the only way to know if you've found the _best_ path is to find _all_ of them.
+With your submarine's subterranean subsystems subsisting suboptimally, the only way you're getting out of this cave anytime soon is by finding a path yourself. Not just **a** path - the only way to know if you've found the **best** path is to find **all** of them.
 
 Fortunately, the sensors are still mostly working, and so you build a rough map of the remaining caves (your puzzle input). For example:
 
@@ -26,9 +26,9 @@ c--A-----b--d
      end
 ```
 
-Your goal is to find the number of distinct _paths_ that start at `start`, end at `end`, and don't visit small caves more than once. There are two types of caves: _big_ caves (written in uppercase, like `A`) and _small_ caves (written in lowercase, like `b`). It would be a waste of time to visit any small cave more than once, but big caves are large enough that it might be worth visiting them multiple times. So, all paths you find should _visit small caves at most once_, and can _visit big caves any number of times_.
+Your goal is to find the number of distinct **paths** that start at `start`, end at `end`, and don't visit small caves more than once. There are two types of caves: **big** caves (written in uppercase, like `A`) and **small** caves (written in lowercase, like `b`). It would be a waste of time to visit any small cave more than once, but big caves are large enough that it might be worth visiting them multiple times. So, all paths you find should **visit small caves at most once**, and can **visit big caves any number of times**.
 
-Given these rules, there are `_10_` paths through this example cave system:
+Given these rules, there are `**10**` paths through this example cave system:
 
 ```
 start,A,b,A,c,A,end
@@ -109,4 +109,4 @@ pj-fs
 start-RW
 ```
 
-_How many paths through this cave system are there that visit small caves at most once?_
+**How many paths through this cave system are there that visit small caves at most once?**

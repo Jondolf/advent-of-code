@@ -101,7 +101,9 @@ async function getPuzzleDescription(
         /<h2>--- /g,
         `<h2><a href="https://adventofcode.com/${year}/day/${day}">`
       )
-      .replace(/ ---<\/h2>/g, "</a></h2>");
+      .replace(/ ---<\/h2>/g, "</a></h2>")
+      .replace(/<em/g, "<strong")
+      .replace(/<\/em>/g, "</strong>");
     const markdown: string = turndownService.turndown(html);
     return markdown;
   } catch (error) {
