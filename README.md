@@ -53,3 +53,4 @@ npm run create 3264 16  # create template for day 16 of 3264
   - [Day 09: Smoke Basin](years/2021/solutions/day-09) ([web](https://adventofcode.com/2021/day/9)) ★★
   - [Day 10: Syntax Scoring](years/2021/solutions/day-10) ([web](https://adventofcode.com/2021/day/10)) ★★
   - [Day 11: Dumbo Octopus](years/2021/solutions/day-11) ([web](https://adventofcode.com/2021/day/11)) ★★
+  - [Day 12: Passage Pathing](years/2021/solutions/day-12) ([web](https://adventofcode.com/2021/day/12)) ★★

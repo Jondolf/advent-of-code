@@ -1,3 +1,32 @@
+export class Graph {
+  private adjList = new Map<string, Set<string>>();
+
+  constructor() {}
+
+  neighbors(v: string): Set<string> | undefined {
+    return this.adjList.get(v);
+  }
+
+  addVertex(v: string) {
+    if (!this.adjList.has(v)) {
+      this.adjList.set(v, new Set());
+    }
+  }
+
+  removeVertex(v: string): boolean {
+    return this.adjList.delete(v);
+  }
+
+  addEdge(v: string, w: string) {
+    this.adjList.get(v)?.add(w);
+    this.adjList.get(w)?.add(v);
+  }
+
+  removeEdge(v: string, w: string): boolean | undefined {
+    return this.adjList.get(v)?.delete(w);
+  }
+}
+
 export interface Coordinate {
   x: number;
   y: number;
