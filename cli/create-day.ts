@@ -67,7 +67,9 @@ async function createInputFile(dir: string, year: number, day: number) {
 
 async function createDescriptionFile(dir: string, year: number, day: number) {
   try {
-    const file: string | undefined = fs.readFileSync(`${dir}/README.md`).toString();
+    const file: string | null = fs.existsSync(`${dir}/README.md`)
+      ? fs.readFileSync(`${dir}/README.md`).toString()
+      : null;
     const description = await getDescriptionMarkdown(year, day);
     if (!file || (file && !file.includes("Part Two") && description.includes("Part Two"))) {
       fs.writeFileSync(`${dir}/README.md`, description);
