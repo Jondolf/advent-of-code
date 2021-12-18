@@ -42,7 +42,7 @@ npm run create 3264 16  # create template for day 16 of 3264
 
 **SPOILERS**: Below are my solutions to the puzzles that I have completed. If you haven't done them yet, the solutions may be spoiled for you. Look at the code at your own risk.
 
-- ⚓ [2021](years/2021) ([web](https://adventofcode.com/2021)) 12 stars
+- ⚓ [2021](years/2021) ([web](https://adventofcode.com/2021)) 26 stars
   - [Day 01: Sonar Sweep](years/2021/solutions/day-01) ([web](https://adventofcode.com/2021/day/1)) ★★
   - [Day 02: Dive!](years/2021/solutions/day-02) ([web](https://adventofcode.com/2021/day/2)) ★★
   - [Day 03: Binary Diagnostic](years/2021/solutions/day-03) ([web](https://adventofcode.com/2021/day/3)) ★★
@@ -55,3 +55,4 @@ npm run create 3264 16  # create template for day 16 of 3264
   - [Day 11: Dumbo Octopus](years/2021/solutions/day-11) ([web](https://adventofcode.com/2021/day/11)) ★★
   - [Day 12: Passage Pathing](years/2021/solutions/day-12) ([web](https://adventofcode.com/2021/day/12)) ★★
   - [Day 13: Transparent Origami](years/2021/solutions/day-13) ([web](https://adventofcode.com/2021/day/13)) ★★
+  - [Day 15: Chiton](years/2021/solutions/day-15) ([web](https://adventofcode.com/2021/day/15)) ★★

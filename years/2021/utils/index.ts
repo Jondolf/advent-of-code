@@ -27,9 +27,54 @@ export class Graph {
   }
 }
 
+export class PriorityQueue<T> {
+  constructor(public elements: PriorityQueueElement<T>[] = []) {}
+
+  get size() {
+    return this.elements.length;
+  }
+
+  get names() {
+    return this.elements.map((val) => val.key);
+  }
+
+  enqueue(value: T, priority: number) {
+    const newEl = new PriorityQueueElement<T>(value, priority);
+    let added = false;
+
+    for (let i = 0; i < this.elements.length; i++) {
+      if (newEl.priority < this.elements[i].priority) {
+        this.elements.splice(i, 0, newEl);
+        added = true;
+        break;
+      }
+    }
+
+    if (!added) {
+      this.elements.push(newEl);
+    }
+    return this.elements;
+  }
+
+  dequeue() {
+    return this.elements.shift();
+  }
+}
+
+class PriorityQueueElement<T> {
+  constructor(public key: T, public priority: number) {}
+}
+
 export interface Coordinate {
   x: number;
   y: number;
+}
+
+export type CoordString = `${number},${number}`;
+
+export function strToCoord(str: CoordString): Coordinate {
+  const [x, y] = str.split(",");
+  return { x: +x, y: +y };
 }
 
 export function coordsInRange(
@@ -47,10 +92,7 @@ export function coordsInRange(
   return coords;
 }
 
-export function countOccurrences(
-  arr: (string | number)[],
-  val: string | number
-): number {
+export function countOccurrences(arr: (string | number)[], val: string | number): number {
   return arr.filter((item) => item === val).length;
 }
 
